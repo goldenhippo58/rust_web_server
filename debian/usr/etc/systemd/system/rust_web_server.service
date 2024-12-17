@@ -1,0 +1,15 @@
+[Unit]
+Description=Rust Web Server
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/rust_web_server
+Restart=always
+User=www-data
+Environment=PORT=8080
+WorkingDirectory=/usr/local/bin
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

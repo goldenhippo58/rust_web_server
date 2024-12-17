@@ -1,0 +1,10 @@
+Package: rust-web-server
+Version: 1.0.0
+Section: web
+Priority: optional
+Architecture: amd64
+Maintainer: Zachary Kleckner zkleckner@gmail.com
+Depends: libc6 (>= 2.28)
+Description: High-performance web server written in Rust
+ This is a high-performance, scalable, and secure web server
+ written in Rust. It supports HTTP/3, TLS, and advanced routing.
